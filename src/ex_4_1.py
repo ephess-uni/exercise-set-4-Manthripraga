@@ -14,10 +14,15 @@ FILENAME = get_data_file_path('messages.log')
 
 
 def num_shutdowns(logfile):
-    shutdown_events = get_shutdown_events(logfile)
-    return len(shutdown_events)
+    """
+    Your docstring here.  Replace the pass keyword below with your implementation.
+    """
+    num = get_shutdown_events(logfile)
+    
+    return len(num)
 
 
 # >>>> The code below will call your function and print the results
 if __name__ == "__main__":
     print(f'{num_shutdowns(FILENAME)=}')
+	
